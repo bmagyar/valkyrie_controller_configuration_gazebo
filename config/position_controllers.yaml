@@ -1,0 +1,115 @@
+left_leg_controller:
+    type: effort_controllers/JointGroupPositionController
+    joints:
+        - leftHipYaw
+        - leftHipRoll
+        - leftHipPitch
+        - leftKneePitch
+        - leftAnklePitch
+    leftHipYaw:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+    leftHipRoll:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+    leftHipPitch:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+    leftKneePitch:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+    leftAnklePitch:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+
+right_leg_controller:
+    type: effort_controllers/JointGroupPositionController
+    joints:
+        - rightHipYaw
+        - rightHipRoll
+        - rightHipPitch
+        - rightKneePitch
+        - rightAnklePitch
+    rightHipYaw:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+    rightHipRoll:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+    rightHipPitch:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+    rightKneePitch:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+    rightAnklePitch:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+
+left_arm_controller:
+    type: effort_controllers/JointGroupPositionController
+    joints:
+        - leftShoulderPitch
+        - leftShoulderRoll
+        - leftShoulderYaw
+        - leftElbowPitch
+        - leftForearmYaw
+        - leftWristRoll
+        - leftWristPitch
+    leftShoulderPitch:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+    leftShoulderRoll:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+    leftShoulderYaw:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+    leftElbowPitch:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+    leftForearmYaw:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+    leftWristRoll:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+    leftWristPitch:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+
+right_arm_controller:
+    type: effort_controllers/JointGroupPositionController
+    joints:
+        - rightShoulderPitch
+        - rightShoulderRoll
+        - rightShoulderYaw
+        - rightElbowPitch
+        - rightForearmYaw
+        - rightWristRoll
+        - rightWristPitch
+    rightShoulderPitch:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+    rightShoulderRoll:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+    rightShoulderYaw:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+    rightElbowPitch:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+    rightForearmYaw:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+    rightWristRoll:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+    rightWristPitch:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+
+
+head_controller:
+    type: effort_controllers/JointGroupPositionController
+    joints:
+        - lowerNeckPitch
+        - neckYaw
+        - upperNeckPitch
+    lowerNeckPitch:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+    neckYaw:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+    upperNeckPitch:
+        pid: {p: 1000.0, i: 0.01, d: 10.0}
+
+torso_controller:
+    type: effort_controllers/JointGroupPositionController
+    joints:
+        - torsoYaw
+        - torsoPitch
+        - torsoRoll
+    torsoYaw:
+        pid: {p: 1000.0, i: 0.01, d: 0.0}
+    torsoPitch:
+        pid: {p: 1000.0, i: 0.01, d: 0.0}
+    torsoRoll:
+        pid: {p: 1000.0, i: 0.01, d: 0.0}
+

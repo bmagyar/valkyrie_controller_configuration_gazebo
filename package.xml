@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<package>
+  <name>valkyrie_controller_configuration_gazebo</name>
+  <version>0.0.0</version>
+  <description>The valkyrie_controller_configuration_gazebo package</description>
+  <maintainer email="bence.magyar.robotics@gmail.com">Bence Magyar</maintainer>
+  <license>TODO</license>
+  <buildtool_depend>catkin</buildtool_depend>
+</package>
